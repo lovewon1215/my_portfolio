@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: #000;
+    font-family: "pretendard", sans-serif;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed; /*포지션 엡솔루트, 픽스드 쓰면 div 100%가 풀림*/
+    left: 30px;
+    top: 13px;
+    /*right: 30px 사용해도 됨*/
+    width: calc(100% - 60px);
+    mix-blend-mode: difference;
+    color: #fff;
+    
+    .plus{
+        width: 30px;
+        text-align: right;
+          img{
+            width: 100%;
+          }
+    }
+}
+
+
+.wrap{
+    width: 1080px;
+    margin: 0 auto;
+img{
+    width: 100%;
+}
+}
+
