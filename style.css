@@ -2,8 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  color: #121212;
-  background-color: #121212;
+  color: #fff;
+  background-color: #000;
   font-family: "pretendard", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -13,6 +13,7 @@ ul, li {
   margin: 0px;
   padding: 0px;
   list-style: none;
+  text-decoration-line: none;
 }
 
 .header {
@@ -25,6 +26,12 @@ ul, li {
   width: calc(100% - 60px);
   mix-blend-mode: difference;
   color: #fff;
+}
+.header .logo_sec {
+  width: 30px;
+}
+.header .logo_sec img {
+  width: 100%;
 }
 .header .plus:hover {
   transform: rotate(-45deg);
@@ -114,4 +121,82 @@ ul, li {
   color: #fff;
   font-weight: 600;
   font-size: 20px;
+}
+
+.footer {
+  width: 100vw;
+  height: 100px;
+  border-top: 1px solid #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.footer .my_info {
+  padding-left: 30px;
+  line-height: 30px;
+  display: flex;
+  padding-top: 30px;
+}
+
+.fullscreen_content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden !important;
+  /*visibility: hidden;*/
+  opacity: 1;
+  z-index: 99;
+}
+.fullscreen_content .header .logo_sec {
+  width: 25px;
+}
+.fullscreen_content .header .logo_sec img {
+  width: 100%;
+}
+.fullscreen_content .header .plus:hover {
+  transform: rotate(-45deg);
+  transition-duration: 1.2s;
+  cursor: pointer;
+}
+.fullscreen_content .header .plus {
+  width: 30px;
+}
+.fullscreen_content .header .plus img {
+  width: 100%;
+}
+.fullscreen_content .fullscreen_inner {
+  position: relative;
+  height: 100vh;
+  display: flex;
+}
+.fullscreen_content .fullscreen_inner .fullscreen_menu {
+  width: 100vw;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+.fullscreen_content .fullscreen_inner .fullscreen_menu ul li {
+  max-width: 50%;
+  min-width: 400px;
+  width: 34.5%;
+  font-weight: 600;
+}
+.fullscreen_content .fullscreen_inner .fullscreen_menu ul li a:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+.fullscreen_content .fullscreen_inner .fullscreen_menu ul li a {
+  font-size: 58px;
+  text-decoration-line: none;
+  color: #8e8e8e;
+}
+.fullscreen_content .fullscreen_inner .fullscreen_menu ul li a span {
+  font-size: 40px;
 }/*# sourceMappingURL=style.css.map */
