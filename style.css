@@ -16,6 +16,11 @@ ul, li {
   text-decoration-line: none;
 }
 
+.wrap {
+  width: 100vw;
+  height: 100vh;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -64,7 +69,7 @@ ul, li {
   padding-bottom: 30px;
 }
 .main_desc .line {
-  line-height: 50px;
+  line-height: 55px;
 }
 .main_desc span {
   animation: typing 2s steps(15), blink 0.5s step-end infinite alternate;
@@ -149,8 +154,8 @@ ul, li {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #000;
   background-position: center;
   background-repeat: no-repeat;
@@ -167,7 +172,7 @@ ul, li {
   opacity: 1;
 }
 .fullscreen_content .header .logo_sec {
-  width: 25px;
+  width: 30px;
 }
 .fullscreen_content .header .logo_sec img {
   width: 100%;
@@ -185,11 +190,11 @@ ul, li {
 }
 .fullscreen_content .fullscreen_inner {
   position: relative;
-  height: 100vh;
+  height: 100%;
   display: flex;
 }
 .fullscreen_content .fullscreen_inner .fullscreen_menu {
-  width: 100vw;
+  height: 100%;
   padding: 0 30px;
   display: flex;
   align-items: center;
