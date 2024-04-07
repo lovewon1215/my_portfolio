@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" type="text/css" />
     <title>my_portfolio</title>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js" integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="header">
@@ -16,15 +20,15 @@
         </div>
     </div>
     <div class="main_desc">
-        I have worked a lot of projects. <br/>
-        My projects are something I am deeply proud of. <br/> 
-        <span>Here are some of them.
+        <div class="line">I have worked a lot of projects.</div>
+        <div class="line">My projects are something I am deeply proud of. </div>
+        <div class="line last">are some of them.<span></span> </div>
     </div>
     <div class="project_items">
         <div class="pr_item"> 
             <div class="pr_img">
                 <a href="https://lovewon1215.github.io/SeMA/" target="_blank" >
-                    <img src="./img/pr01.jpg">
+                    <img src="./img/main_img01.png">
                 </a>
             </div>
             <div class="pr_info">
@@ -201,3 +205,12 @@
     </div>
 </body>
 </html>
+
+<script>
+
+    $(".header .plus").click(()=>{
+        $(".fullscreen_content").toggleClass("active");
+        $(".header .plus").toggleClass("active");
+    });
+    gsap.from(".main_desc .last",3.,{text:""});
+</script>

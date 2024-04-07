@@ -42,6 +42,9 @@ body {
         img{
           width: 100%;
         }
+        &.active{
+          transform: rotate(45deg);
+        }
         
     }
     }
@@ -53,13 +56,17 @@ body {
   
   
   .main_desc {
+    height: 150px;
     margin-top: 196px;
     padding-left: 30px;
     font-size: 50px;
-    line-height: 1.2em;
+    
     font-weight: 500;
     color: #fff;
     padding-bottom: 30px;
+    .line{
+      line-height: 50px;
+    }
     span{
     animation: typing 2s steps(15), blink .5s step-end infinite alternate;
     white-space: nowrap;
@@ -101,10 +108,12 @@ body {
   }
   .project_items .pr_img {
     transition-duration: 1.2s;
+    
   }
   .project_items .pr_img img {
     width: 100%;
     display: block;
+    
   }
   .project_items .pr_info {
     display: flex;
@@ -148,8 +157,14 @@ body {
     background-size: cover;
     overflow-x: hidden!important;
     /*visibility: hidden;*/
-    opacity: 1;
+    opacity: 0;
     z-index: 99;
+    pointer-events: none;;
+    transition-duration: 0.3s;
+    &.active{
+      pointer-events: initial;
+      opacity: 1;
+    }
     
     .header{    
     .logo_sec{
